@@ -1,0 +1,30 @@
+---
+title: Contact Sorry :(
+---
+
+%h1 Contact Sorry
+%h2 We are currently available for select projects
+%p
+  We’d love hear from you. Reach out and let us know what you’re doing or just say hello
+  = image_tag 'wave.png', width: '14px', class: 'wave'
+/ %form
+/   .form-item
+/     %input{placeholder: 'Your name'}
+/   .form-item
+/     %input{placeholder: 'Your email'}
+/   .form-control
+/     %select
+/       %option{ selected: true, disabled: true } Your budget
+/       %option $10,000 - $24,999
+/       %option $25,000 - $49,999
+/       %option $50,000 - $100,000
+/   .form-item
+/     %textarea{placeholder: 'Tell us about what you\'re working on'}
+/   .form-item
+/     %input{type: 'submit', value: 'Send'}
+/   %p We'll get back to you within 48 hours.
+%ul.no-style
+  %li New Business: #{link_to 'makesomething@sorry.com', 'mailto:makesomething@sorry.com'}
+  %li Opportunities: #{link_to 'work@sorry.com', 'mailto:work@sorry.com'}
+  %li General Inquiries: #{link_to 'hello@sorry.com', 'mailto:hello@sorry.com'}
+%h3 based in Los Angeles, CA

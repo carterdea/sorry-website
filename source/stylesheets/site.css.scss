@@ -1,0 +1,465 @@
+@charset 'utf-8';
+@import 'normalize';
+@import 'variables';
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background: $color-white;
+  color: $color-primary;
+  font: 13px/1.230769 'Apercu', Arial, sans-serif;
+  font-size: 0.8125rem; // 13px in rem
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.wrapper {
+  background: $color-background;
+  margin: 5px;
+}
+
+.container {
+  padding: .4rem .8rem;
+  margin: 0 auto;
+  width: 100%;
+}
+
+a {
+  border-bottom: 2px solid $color-primary;
+  color: $color-primary;
+  text-decoration: none;
+}
+
+ul.no-style {
+  list-style-type: none;
+  padding-left: 0;
+  li {
+    margin-bottom: 7px;
+  }
+}
+
+.button {
+  border: 2px solid $color-primary;
+  border-radius: 3px;
+  font-weight: 700;
+  padding: 6px 15px;
+}
+
+.logo {
+  border: 0;
+  font-size: 18px;
+  font-weight: 700;
+  img {
+    display: inline-block;
+    height: auto;
+    margin-bottom: 4px;
+    width: 14px;
+  }
+}
+
+nav {
+  float: right;
+  ul {
+    margin: 8px 0 0;
+    padding: 0;
+  }
+  li {
+    display: inline;
+    font-weight: 700;
+    margin-left: 14px;
+    text-transform: uppercase;
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+  a {
+    border: 0;
+    &.current {
+      color: $color-grey;
+      &.button {
+        border-color: $color-grey;
+      }
+    }
+    &.button {
+      padding: 7px 10px 6px;
+    }
+  }
+}
+
+footer {
+  font-size: 10px;
+  text-align: center;
+
+  .city {
+    float: left;
+  }
+
+  .copyright {
+    text-align: center;
+  }
+
+  .name {
+    float: right;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 .5rem;
+}
+
+p {
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: 0.813rem;
+  margin: 1rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 0.688rem;
+  margin-bottom: 1.125rem; // 18 / 16 = 1.125rem
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h4 {
+  margin-bottom: .2rem;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+hr {
+  border: 0;
+  border-top: 2px solid lighten($color-grey, 22%);
+  margin: 1rem auto;
+  max-width: 330px;
+}
+
+.index {
+  color: $color-white;
+  height: calc(100% - 5px);
+
+  .wrapper {
+    background: image_url('hero-mobile.jpg') no-repeat center center;
+    background-size: cover;
+    height: calc(100% - 5px);
+  }
+  // Making the homepage a table cell, so we can vertically center the content
+  .container {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+
+  .site-wrapper-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    .button {
+      border-color: $color-white;
+      color: $color-white;
+      display: inline-block;
+      font-size: 16px;
+    }
+  }
+
+  header,
+  footer {
+    position: absolute;
+    width: calc(100% - 10px);
+  }
+
+  h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: .1rem;
+    text-transform: none;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  footer {
+    bottom: 5px;
+    .container div {
+      border-top: 2px solid rgba($color-white, .4);
+      padding-top: 5px;
+    }
+  }
+}
+
+.projects {
+  margin-bottom: 20px;
+}
+
+.project {
+  border-bottom: 2px solid lighten($color-grey, 22%);
+  padding: 10px 0;
+  img {
+    float: left;
+    height: auto;
+    margin-right: 10px;
+    width: 60px;
+  }
+  h2 {
+    margin-bottom: 0;
+  }
+  p {
+    margin-bottom: .2rem;
+  }
+  .meta-data {
+    color: $color-grey;
+    font-size: 0.563rem;
+    text-transform: uppercase;
+  }
+}
+
+.service {
+  width: 46.42857143%; // 130 / 280 = 46.42857143%
+  float: left;
+  &:nth-child(odd) {
+    margin-right: 7.142857143%; // 20 / 280 = 7.142857143%
+  }
+}
+
+.service img {
+  height: auto;
+  width: 80px;
+}
+
+.service ul {
+  padding-left: 15px;
+  margin-top: 0;
+}
+
+.clients {
+  margin-bottom: 32px;
+}
+
+.client {
+  float: left;
+  text-align: center;
+  width: 33%;
+
+  &:last-child,
+  &:nth-last-child(2) {
+    width: 50%;
+  }
+}
+
+.microsoft {
+  width: 80px;
+}
+
+.ford {
+  width: 70px;
+}
+
+.stussy {
+  width: 60px;
+}
+
+.usc {
+  width: 70px;
+}
+
+.ap {
+  width: 40px;
+}
+
+.grubmarket {
+  width: 70px;
+}
+
+.rgi {
+  width: 70px;
+}
+
+.hitrecord {
+  padding-top: 15px;
+  width: 90px;
+}
+
+.wave {
+  vertical-align: bottom;
+}
+
+/* Media Queries */
+
+
+/* Note: The best way to structure the use of media queries is to create the
+   queries near the relevant code. For example, if you wanted to change the
+   styles for buttons on small devices, paste the mobile query code up in the
+   buttons section and style it there. */
+
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {
+  .index .wrapper {
+    background-image: image_url('hero-tablet.jpg');
+  }
+}
+
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 560px) {
+  body {
+    font-size: .875rem; // 14 / 16 = .875rem
+  }
+
+  .work .main.container {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 720px) {
+  .container {
+    max-width: 690px;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .container-inner {
+    margin: 0 auto;
+    width: 82.60869565%; // 570 / 690 = 82.60869565%
+  }
+
+  nav a.button:hover {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    color: $color-background;
+  }
+
+  .index {
+    nav a.button:hover {
+      color: #bfc6cc;
+    }
+
+    .site-wrapper-inner {
+      a.button:hover {
+        background-color: $color-white;
+        color: #627a7c;
+      }
+    }
+  }
+
+  .project img {
+    width: 75px;
+  }
+
+  .service,
+  .service:nth-child(odd) {
+    margin-right: 4.347826087%; // 30 / 690 = 4.347826087%
+    width: 30.43478261%; // 210 / 690 = 30.43478261%
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .client {
+    width: 25%;
+
+    &:nth-last-child(2),
+    &:last-child {
+      width: 25%;
+    }
+
+    &:nth-child(5) {
+      clear: left;
+    }
+  }
+
+  .microsoft {
+    width: 120px;
+  }
+
+  .ford {
+    width: 110px;
+  }
+
+  .stussy {
+    width: 90px;
+  }
+
+  .usc {
+    width: 110px;
+  }
+
+  .ap {
+    width: 60px;
+  }
+
+  .grubmarket {
+    width: 110px;
+  }
+
+  .rgi {
+    width: 110px;
+  }
+
+  .hitrecord {
+    padding-top: 25px;
+    width: 110px;
+  }
+}
+
+
+/* Larger than desktop */
+
+@media (min-width: 960px) {
+  .container {
+    max-width: 906px;
+  }
+
+  .work .main.container {
+    width: 50%;
+  }
+
+  .index .wrapper {
+    background-image: image_url('hero-desktop.jpg');
+  }
+}
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1110;
+  }
+}

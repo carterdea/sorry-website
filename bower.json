@@ -1,0 +1,22 @@
+{
+  "name": "sorry_website",
+  "authors": [
+    "Carter De Angelis <carterdea@gmail.com>"
+  ],
+  "description": "Website for my tiny studio",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {}
+}
