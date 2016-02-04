@@ -9,6 +9,10 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+activate :relative_assets
+set :relative_links, true
+activate :directory_indexes
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
@@ -44,4 +48,5 @@ configure :build do
 
   # Minify Javascript on build
   activate :minify_javascript
+  activate :gzip
 end

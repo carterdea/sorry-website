@@ -24,6 +24,9 @@
               %li= nav_link_to 'Contact', 'contact.html', class: 'button'
       .main.container
         = yield
+      // if you're on the contact page, show the map under the footer
+      - if current_page.path == 'contact.html'
+        = partial 'map'
       %footer
         .container
           %div
