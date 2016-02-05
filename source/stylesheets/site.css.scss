@@ -63,7 +63,6 @@ ul.no-style {
   border: 2px solid $color-primary;
   border-radius: 3px;
   font-family: 'Sorry Bold';
-  font-weight: 700;
   padding: 6px 15px;
 }
 
@@ -71,7 +70,6 @@ ul.no-style {
   border: 0;
   font-family: 'Sorry Bold';
   font-size: 18px;
-  font-weight: 700;
   img {
     display: inline-block;
     height: auto;
@@ -89,7 +87,6 @@ nav {
   li {
     display: inline;
     font-family: 'Sorry Bold';
-    font-weight: 700;
     margin-left: 14px;
     text-transform: uppercase;
     &:first-child {
@@ -151,7 +148,6 @@ h1 {
 h2 {
   font-size: 1.125rem;
   font-family: 'Sorry Bold';
-  font-weight: 700;
 }
 
 h3 {
@@ -215,7 +211,6 @@ hr {
   h1 {
     font-size: 28px;
     font-family: 'Sorry Bold';
-    font-weight: 700;
     line-height: 1.2;
     margin-bottom: .1rem;
     text-transform: none;
@@ -223,7 +218,6 @@ hr {
 
   h2 {
     font-size: 18px;
-    font-weight: 400;
   }
 
   footer {
@@ -364,7 +358,6 @@ button {
   background-color: transparent;
   border-radius: 3px;
   font-family: 'Sorry Bold';
-  font-weight: 700;
   padding: 6px 30px 5px;
   width: auto;
   &:hover {
