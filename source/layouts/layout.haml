@@ -7,9 +7,13 @@
     / Use title if it's in the page YAML frontmatter
     %title= current_page.data.title || 'Sorry :('
     %meta{name: 'description', content: current_page.data.description || 'Sorry is a studio in Santa Monica specializing in Product Design & Development.' }
-
     = stylesheet_link_tag :site
     = javascript_include_tag :all
+    %link{ rel: 'mask-icon', href: 'sorry-icon.svg', color: '#222222' }
+    %link{ rel: 'apple-touch-icon', href: 'touch-icon-iphone.png' }
+    %link{ rel: 'apple-touch-icon', sizes: '76x76', href: 'apple-touch-icon-76.png' }
+    %link{ rel: 'apple-touch-icon', sizes: '120x120', href: 'apple-touch-icon-120.png' }
+    %link{ rel: 'apple-touch-icon', sizes: '152x152', href: 'apple-touch-icon-152.png' }
   %body{ class: page_classes }
     .wrapper
       %header

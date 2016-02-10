@@ -13,6 +13,8 @@ activate :relative_assets
 set :relative_links, true
 activate :directory_indexes
 
+page '/404.html', directory_index: false
+
 # With alternative layout
 # page "/path/to/file.html", layout: :otherlayout
 
