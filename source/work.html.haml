@@ -7,33 +7,49 @@ title: Our Work :(
 .projects
   .project.clearfix
     =link_to 'https://www.spinlister.com' do
-      = image_tag 'project-thumb-spinlister.png'
+      = image_tag 'project-thumb-spinlister.png', alt: 'Spinlister'
       %h2 Spinlister
       %p Rent a bike from someone just like you on the “AirBnB for bikes.”
       %p.meta-data Strategy, Design, Development
+  .project.clearfix
+    =link_to 'https://www.crowdvest.co' do
+      = image_tag 'project-thumb-crowdvest.png', alt: 'CrowdVest'
+      %h2 CrowdVest
+      %p Get in early on the next big startup with investments as low as $500.
+      %p.meta-data Strategy, Design, Development
+  .project.clearfix
+    =link_to 'https://www.thebenefit.com' do
+      = image_tag 'project-thumb-the-benefit.png', alt: 'The Benefit'
+      %h2 The Benefit
+      %p See photos and videos of workouts and healthy recipes from health-conscious people.
+      %p.meta-data Strategy, Design, Development
+  .project.clearfix
+    = link_to 'https://www.apstylebook.com' do
+      = image_tag 'project-thumb-associated-press.png', alt: 'Associated Press'
+      %h2 AP StyleBook
+      %p The industry standard grammar and style guide for journalists around the world.
+      %p.meta-data Strategy, Development
   .project.clearfix
     = link_to 'https://www.stussy.com' do
       = image_tag 'project-thumb-stussy.png', alt: 'Stussy'
       %h2 Stussy
       %p A street-wear brand with 30 year old Orange County surfer roots.
-      %p.meta-data Strategy, Design, Development
+      %p.meta-data Strategy, Design
   .project.clearfix
-    = link_to 'https://adopttogether.herokuapp.com' do
+    = link_to 'https://adopttogether.org' do
       = image_tag 'project-thumb-adopttogether.png', alt: 'AdoptTogether'
       %h2 AdoptTogether
       %p A Crowdfunding platform for families trying to adopt.
       %p.meta-data Strategy, Design, Development
   .project.clearfix
     = image_tag 'project-thumb-meddevicejobs.png', alt: 'MedDeviceJobs'
-
     %h2 MedDeviceJobs
     %p A job board for the medical device industry.
     %p.meta-data Strategy, Design, Development
   .project.clearfix
-    = link_to 'https://www.happ.city' do
-      = image_tag 'project-thumb-happ.png', alt: 'Happ'
-      %h2 Happ
-      %p Discover what’s happening around you on Happ, an iOS app.
-      %p.meta-data Strategy, Design, Development
+    = image_tag 'project-thumb-happ.png', alt: 'Happ'
+    %h2 Happ
+    %p Discover what’s happening around you on Happ, an iOS app.
+    %p.meta-data Strategy, Design, Development
 %p Some work is protected by NDA. To see this work, contact us and we’ll send you a secret project.
 %p Do you want to work on something great together? #{link_to 'Contact us now', 'contact.html'}
