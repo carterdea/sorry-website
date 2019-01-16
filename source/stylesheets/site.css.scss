@@ -315,8 +315,9 @@ hr {
   width: 70px;
 }
 
-.rgi {
-  width: 70px;
+.oracle {
+  padding-top: 18px;
+  width: 90px;
 }
 
 .hitrecord {
@@ -369,7 +370,8 @@ button {
 }
 
 #map {
-  height: 220px;
+  height: 33vh;
+  min-height: 220px;
 }
 
 #map canvas:focus {
@@ -497,8 +499,9 @@ button {
     width: 110px;
   }
 
-  .rgi {
-    width: 110px;
+  .oracle {
+    padding-top: 28px;
+    width: 120px;
   }
 
   .hitrecord {

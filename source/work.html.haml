@@ -6,16 +6,22 @@ title: Our Work :(
 
 .projects
   .project.clearfix
+    =link_to 'https://www.codeclimate.com' do
+      = image_tag 'project-thumb-code-climate.png', alt: 'Code Climate'
+      %h2 Code Climate
+      %p Giving engineering managers visibility & insights into their engineers' productivity by tracking pull requests, commit meta data and more.
+      %p.meta-data Design
+  .project.clearfix
+    =link_to 'https://www.datascience.com' do
+      = image_tag 'project-thumb-datascience.png', alt: 'DataScience'
+      %h2 DataScience
+      %p Empowering data scientists with a platform to use open source data science tools and collaborate with their peers.
+      %p.meta-data Design
+  .project.clearfix
     =link_to 'https://www.spinlister.com' do
       = image_tag 'project-thumb-spinlister.png', alt: 'Spinlister'
       %h2 Spinlister
       %p Rent a bike from someone just like you on the “AirBnB for bikes.”
-      %p.meta-data Strategy, Design, Development
-  .project.clearfix
-    =link_to 'https://www.crowdvest.co' do
-      = image_tag 'project-thumb-crowdvest.png', alt: 'CrowdVest'
-      %h2 CrowdVest
-      %p Get in early on the next big startup with investments as low as $500.
       %p.meta-data Strategy, Design, Development
   .project.clearfix
     =link_to 'https://carterdea.github.io/thebenefit.com/' do

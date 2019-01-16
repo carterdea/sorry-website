@@ -1,0 +1,8 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Carter De Angelis
+  Site: https://carterdea.com
+  Location: Santa Monica, CA

@@ -23,6 +23,7 @@
             = image_tag 'logo.png'
           %nav
             %ul
+              %li= nav_link_to 'Home', 'index.html'
               %li= nav_link_to 'Work', 'work.html'
               %li= nav_link_to 'About', 'about.html'
               %li= nav_link_to 'Contact', 'contact.html', class: 'button'
@@ -36,4 +37,4 @@
           %div
             %span.city Santa Monica, CA
             %span.copyright &copy; Copyright #{Date.today.year}
-            %span.name Sorry :(
+            %span.name Sorry
