@@ -10,4 +10,4 @@ gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
 
 # Middleman Gems
 gem 'middleman', '~> 4.3'
-gem 'middleman-compass', '~> 4.0'
+gem 'middleman-compass', '~> 4.0', '>= 4.0.1'
